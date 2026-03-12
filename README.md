@@ -44,5 +44,3 @@ pnpm dev
 ## Documentation
 
 Project documentation is located in the `docs/` directory.
-
-O pnpm exige Node.js 18.12+ se você não estiver usando o executável standalone.
