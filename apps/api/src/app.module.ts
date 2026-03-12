@@ -6,6 +6,7 @@ import { getTypeOrmConfig } from "./database/typeorm.config";
 import { AuthModule } from "./modules/auth/auth.module";
 import { HealthController } from "./modules/health/health.controller";
 import { UsersModule } from "./modules/users/users.module";
+import { DocumentsModule } from "./modules/documents/documents.module";
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { UsersModule } from "./modules/users/users.module";
     }),
     UsersModule,
     AuthModule,
+    DocumentsModule,
   ],
   controllers: [HealthController],
 })

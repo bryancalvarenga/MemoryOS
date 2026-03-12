@@ -1,5 +1,6 @@
 import { TypeOrmModuleOptions } from "@nestjs/typeorm";
 import { UserEntity } from "../modules/users/user.entity";
+import { DocumentEntity } from "../modules/documents/document.entity";
 
 /**
  * Função responsável por gerar a configuração do TypeORM.
@@ -46,7 +47,7 @@ export function getTypeOrmConfig(databaseUrl: string): TypeOrmModuleOptions {
      * - DocumentEntity
      * - SessionEntity
      */
-    entities: [UserEntity],
+    entities: [UserEntity, DocumentEntity],
 
     /**
      * synchronize: false é extremamente importante em produção.
